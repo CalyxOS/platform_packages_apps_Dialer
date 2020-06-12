@@ -106,7 +106,7 @@ public class FavoritesViewHolder extends RecyclerView.ViewHolder implements
   @Override
   public void onClick(View v) {
     if (speedDialUiItem.defaultChannel() != null) {
-      listener.onClick(speedDialUiItem.defaultChannel());
+      listener.onClick(speedDialUiItem.defaultChannel(), speedDialUiItem.lookupKey());
     } else {
       listener.onAmbiguousContactClicked(speedDialUiItem);
     }
@@ -140,7 +140,7 @@ public class FavoritesViewHolder extends RecyclerView.ViewHolder implements
     void onAmbiguousContactClicked(SpeedDialUiItem speedDialUiItem);
 
     /** Called when the user clicks on a favorite contact. */
-    void onClick(Channel channel);
+    void onClick(Channel channel, String lookupKey);
 
     /** Called when the user long clicks on a favorite contact. */
     void showContextMenu(View view, SpeedDialUiItem speedDialUiItem);

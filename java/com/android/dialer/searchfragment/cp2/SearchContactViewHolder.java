@@ -69,6 +69,7 @@ public final class SearchContactViewHolder extends RecyclerView.ViewHolder
 
   private int position;
   private String number;
+  private String lookupKey;
   private @CallToAction int currentAction;
 
   public SearchContactViewHolder(View view, RowClickListener listener) {
@@ -89,6 +90,7 @@ public final class SearchContactViewHolder extends RecyclerView.ViewHolder
   public void bind(SearchCursor cursor, String query) {
     position = cursor.getPosition();
     number = cursor.getString(Projections.PHONE_NUMBER);
+    lookupKey = cursor.getString(Projections.LOOKUP_KEY);
     String name = cursor.getString(Projections.DISPLAY_NAME);
     String label = getLabel(context.getResources(), cursor);
     String secondaryInfo =
@@ -200,7 +202,7 @@ public final class SearchContactViewHolder extends RecyclerView.ViewHolder
               "Invalid Call to action type: " + currentAction);
       }
     } else {
-      listener.placeVoiceCall(number, position);
+      listener.placeVoiceCall(number, lookupKey, position);
     }
   }
 }
