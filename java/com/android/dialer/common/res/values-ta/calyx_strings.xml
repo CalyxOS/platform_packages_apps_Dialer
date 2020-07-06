@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_choose_title">இந்த அழைப்பிற்கு வழங்குநரைத் தேர்வு செய்யவும்</string>
+    <string name="call_account_unknown">தெரியவில்லை</string>
+    <string name="call_account_private">ஆடியோ மற்றும் வீடியோ தனிப்பட்டவை</string>
+    <string name="call_account_not_private">ஆடியோ தனிப்பட்டதல்ல</string>
+    <string name="call_account_unavailable">இந்த எண்ணுக்கு கிடைக்கவில்லை</string>
+    <string name="dialer_search_action">%s இல் திறந்திருக்கும்</string>
+    <string name="call_account_offline">இணைய இணைப்பு இல்லை</string>
+    <string name="call_account_not_installed">நிறுவப்படவில்லை - நிறுவ தட்டவும்</string>
+    <string name="incall_screen_privacy_data_collection">இந்த அழைப்பின் இருப்பிடம் மற்றும் ஆடியோ தனிப்பட்டதல்ல.</string>
+    <string name="show_accounts_selection_dialog">அழைப்பு வழங்குநர் தேர்வு உரையாடலைக் காட்டு</string>
+</resources>

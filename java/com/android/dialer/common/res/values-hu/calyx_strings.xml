@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_choose_title">Válassza ki a hívás szolgáltatóját</string>
+    <string name="call_account_unknown">Ismeretlen</string>
+    <string name="call_account_private">Privát hang és videó</string>
+    <string name="call_account_not_private">A hang nem privát</string>
+    <string name="call_account_unavailable">Nem elérhető ehhez a számhoz</string>
+    <string name="call_account_offline">Nincs internet kapcsolat</string>
+    <string name="call_account_not_installed">Nem telepített - Koppintson a telepítéshez</string>
+    <string name="dialer_search_action">Megnyitás %s-ban</string>
+    <string name="incall_screen_privacy_data_collection">A helymeghatározás és hang nem privát a hívás során.</string>
+    <string name="show_accounts_selection_dialog">Hívás szolgáltató kiválasztó panel megjelenítése</string>
+</resources>
