@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="show_accounts_selection_dialog">コールのプロバイダーの選択欄を表示する</string>
+    <string name="call_account_choose_title">このコールのためのプロバイダーを選択してください</string>
+    <string name="incall_screen_privacy_data_collection">このコールは、位置情報と音声がプライベートではありません。</string>
+    <string name="call_account_not_installed">未インストール - タップしてインストールする</string>
+    <string name="call_account_offline">インターネット接続なし</string>
+    <string name="call_account_unavailable">この番号では利用できません</string>
+    <string name="call_account_not_private">音声がプライベートではありません</string>
+    <string name="call_account_private">音声とビデオがプライベートです</string>
+    <string name="call_account_unknown">不明</string>
+</resources>
