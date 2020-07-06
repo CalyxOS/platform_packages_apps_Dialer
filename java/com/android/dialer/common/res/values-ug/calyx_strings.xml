@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_choose_title">بۇ چاقىرىشنى تەمىنلىگۈچى تاللىنىدۇ</string>
+    <string name="call_account_unknown">نامەلۇم</string>
+    <string name="call_account_not_private">ئۈن شەخسىي ئەمەس</string>
+    <string name="call_account_unavailable">بۇ نومۇرغا ئىشلەتكىلى بولمايدۇ</string>
+    <string name="call_account_offline">ئىنتېرنېت باغلىنىشى يوق</string>
+    <string name="call_account_not_installed">ئورنىتىلمىغان - چېكىلسە ئورنىتىدۇ</string>
+    <string name="dialer_search_action">%s دا ئاچ</string>
+    <string name="incall_screen_privacy_data_collection">بۇ چاقىرىشنىڭ ئورۇن ۋە ئاۋازى شەخسىي ئەمەس.</string>
+    <string name="show_accounts_selection_dialog">چاقىرىش تەمىنلىگۈچىنى تاللاش كۆزنىكى كۆرۈنىدۇ</string>
+    <string name="call_account_private">ئۈن ۋە سىن شەخسىي</string>
+</resources>

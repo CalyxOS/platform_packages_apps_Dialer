@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_not_installed">Neinstalat - Atinge pentru a instala</string>
+    <string name="call_account_private">Audio și video sunt private</string>
+    <string name="call_account_not_private">Audio nu este privat</string>
+    <string name="call_account_unavailable">Indisponibil pentru acest număr</string>
+    <string name="call_account_offline">Fără conexiune la internet</string>
+    <string name="incall_screen_privacy_data_collection">Locația și sunetul acestui apel nu sunt private.</string>
+    <string name="show_accounts_selection_dialog">Afișează dialogul de selectare a furnizorului de apeluri</string>
+    <string name="dialer_search_action">Deschide în %s</string>
+    <string name="call_account_choose_title">Alege un furnizor pentru acest apel</string>
+    <string name="call_account_unknown">Necunoscut</string>
+</resources>
