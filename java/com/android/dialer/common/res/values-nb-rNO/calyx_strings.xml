@@ -7,7 +7,5 @@
     <string name="call_account_not_private">Lyd er ikke privat</string>
     <string name="call_account_private">Lyd og video er privat</string>
     <string name="call_account_unknown">Ukjent</string>
-    <string name="call_account_whatsapp" translatable="false">WhatsApp</string>
-    <string name="call_account_signal" translatable="false">Signal</string>
     <string name="call_account_choose_title">Velg en tilbyder for denne samtalen</string>
 </resources>
