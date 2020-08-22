@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_not_installed">No instalada; pulse para instalar</string>
+    <string name="call_account_unknown">Desconocido</string>
+    <string name="call_account_choose_title">Elija un proveedor para esta llamada</string>
+</resources>

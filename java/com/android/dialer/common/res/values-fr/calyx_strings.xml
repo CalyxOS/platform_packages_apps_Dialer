@@ -7,7 +7,5 @@
     <string name="call_account_not_private">L’audio n’est pas privé</string>
     <string name="call_account_private">L’audio et la vidéo sont privés</string>
     <string name="call_account_unknown">Inconnu</string>
-    <string name="call_account_whatsapp" translatable="false">WhatsApp</string>
-    <string name="call_account_signal" translatable="false">Signal</string>
     <string name="call_account_choose_title">Choisissez un fournisseur pour cet appel</string>
 </resources>
