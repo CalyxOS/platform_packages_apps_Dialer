@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="incall_screen_privacy_data_collection">Bu aramanın konumu ve sesi özel değil.</string>
+    <string name="call_account_not_installed">Kurulu değil - Kurmak için dokunun</string>
+    <string name="call_account_offline">İnternet bağlantısı yok</string>
+    <string name="call_account_unavailable">Bu numara için kullanılamıyor</string>
+    <string name="call_account_not_private">Ses özel değil</string>
+    <string name="call_account_private">Ses ve video özel</string>
+    <string name="call_account_unknown">Bilinmeyen</string>
+    <string name="call_account_choose_title">Bu arama için bir sağlayıcı seçin</string>
+</resources>

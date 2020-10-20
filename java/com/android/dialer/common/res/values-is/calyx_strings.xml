@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="incall_screen_privacy_data_collection">Hljóð og staðsetning símtalsins eru ekki leynileg</string>
+    <string name="incall_screen_privacy_data_collection">Hljóð og staðsetning símtalsins eru ekki leynileg.</string>
     <string name="call_account_not_installed">Ekki uppsett - Snertu til að setja upp</string>
     <string name="call_account_offline">Engin internettenging</string>
     <string name="call_account_unavailable">Ekki í boði fyrir þetta númer</string>
