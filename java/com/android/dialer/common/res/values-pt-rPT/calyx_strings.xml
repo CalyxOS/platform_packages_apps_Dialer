@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="call_account_choose_title">Choose a provider for this call</string>
+</resources>
