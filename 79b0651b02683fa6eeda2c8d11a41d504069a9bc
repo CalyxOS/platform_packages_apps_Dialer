@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4dd1fcb0_fa89a26d",
+        "filename": "java/com/android/dialer/app/calllog/CallLogListItemViewHolder.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1087,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-04-30T14:27:19Z",
+      "side": 1,
+      "message": "am I missing something or this code is unreachable?",
+      "range": {
+        "startLine": 1077,
+        "startChar": 6,
+        "endLine": 1087,
+        "endChar": 7
+      },
+      "revId": "79b0651b02683fa6eeda2c8d11a41d504069a9bc",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0",
+      "unresolved": true
+    }
+  ]
+}
