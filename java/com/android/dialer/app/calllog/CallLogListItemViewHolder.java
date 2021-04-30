@@ -26,6 +26,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.provider.CallLog;
 import android.provider.CallLog.Calls;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
@@ -1075,7 +1076,7 @@ public final class CallLogListItemViewHolder extends RecyclerView.ViewHolder
         Logger.get(context).logImpression(DialerImpression.Type.IMS_VIDEO_REQUESTED_FROM_CALL_LOG);
       }
       // hijack call to show chooser dialog (hopefully only for regular call backs)
-      else if (SpecialCallingAccounts.showDialog(intent, callIntentBuilder)) {
+      else if (SpecialCallingAccounts.showDialog(context, intent, callIntentBuilder)) {
         Intent phoneIntent;
         if (callIntentBuilder != null) phoneIntent = callIntentBuilder.build();
         else phoneIntent = intent;
