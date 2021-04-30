@@ -17,10 +17,15 @@
 
 package com.android.dialer.app.settings;
 
+import static com.android.dialer.common.accounts.SpecialCallingAccounts.KEY_SHOW_ACCOUNTS_SELECTION_DIALOG;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceManager;
+import androidx.preference.SwitchPreference;
 
 import com.android.dialer.R;
 
@@ -29,5 +34,15 @@ public class DisplayOptionsSettingsFragment extends PreferenceFragmentCompat {
   @Override
   public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
     addPreferencesFromResource(R.xml.display_options_settings);
+    SwitchPreference switchPref =
+        (SwitchPreference) findPreference(KEY_SHOW_ACCOUNTS_SELECTION_DIALOG);
+    switchPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+      @Override
+      public boolean onPreferenceChange(Preference preference, Object newValue) {
+        PreferenceManager.getDefaultSharedPreferences(getContext()).edit().putBoolean(
+                KEY_SHOW_ACCOUNTS_SELECTION_DIALOG, (boolean) newValue).apply();
+        return true;
+      }
+    });
   }
 }
