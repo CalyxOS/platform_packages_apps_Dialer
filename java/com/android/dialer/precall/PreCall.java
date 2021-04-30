@@ -52,7 +52,7 @@ public interface PreCall {
 
   static void start(Activity activity, String phoneNumber, CallIntentBuilder builder,
       @Nullable String lookupKey) {
-    if (SpecialCallingAccounts.showDialog(phoneNumber, builder) && lookupKey != null) {
+    if (SpecialCallingAccounts.showDialog(activity, phoneNumber, builder) && lookupKey != null) {
       Intent intent = builder.build();
       SelectAccountDialogFragment.newInstance(intent, lookupKey, phoneNumber)
           .show(activity.getFragmentManager(), "SELECT_ACCOUNT");

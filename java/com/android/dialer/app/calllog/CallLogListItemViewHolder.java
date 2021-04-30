@@ -896,7 +896,7 @@ public final class CallLogListItemViewHolder extends RecyclerView.ViewHolder
       CallIntentBuilder callIntentBuilder = intent.getParcelableExtra(
           PreCallCoordinator.EXTRA_CALL_INTENT_BUILDER);
       // hijack call to show chooser dialog (hopefully only for regular call backs)
-      if (SpecialCallingAccounts.showDialog(intent, callIntentBuilder)) {
+      if (SpecialCallingAccounts.showDialog(context, intent, callIntentBuilder)) {
         Intent phoneIntent;
         if (callIntentBuilder != null) phoneIntent = callIntentBuilder.build();
         else phoneIntent = intent;
