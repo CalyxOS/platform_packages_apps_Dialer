@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c8820017_d4034db7",
+        "filename": "java/com/android/dialer/common/res/values/calyx_strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-05-05T11:54:36Z",
+      "side": 1,
+      "message": "Could be better, but matches call_account_choose_title and thus hopefully it\u0027s less confusing than just \u0027accounts\u0027",
+      "revId": "90f7153fb0564efae45efb20170975b2c2674eaa",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0",
+      "unresolved": false
+    }
+  ]
+}
