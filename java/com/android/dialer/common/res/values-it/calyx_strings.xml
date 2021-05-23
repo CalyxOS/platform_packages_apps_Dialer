@@ -5,4 +5,7 @@
     <string name="call_account_unavailable">Non disponibile per questo numero</string>
     <string name="call_account_not_private">L\'audio non è privato</string>
     <string name="call_account_private">L\'audio e il video sono privati</string>
+    <string name="incall_screen_privacy_data_collection">La geolocalizzazione e l\'audio di questa telefonata non sono private.</string>
+    <string name="call_account_unknown">Sconosciuto</string>
+    <string name="call_account_choose_title">Selezionare un operatore per questa chiamata</string>
 </resources>
