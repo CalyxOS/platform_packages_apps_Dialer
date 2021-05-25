@@ -16,6 +16,24 @@
       "message": "For Chromium, see https://stackoverflow.com/a/45112167\nIf DDG is used as the default browser this is not really an issue?\nUnsure about handling Tor browser as default",
       "revId": "71f6c7b2d789bd2d7fa532aba509b83bb82b5b4f",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c8709d0_1a9966f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-05-25T16:44:14Z",
+      "side": 1,
+      "message": "Re: Chromium we can check and enable that for our builds then.\nRe: DDG, yes\nRe: Tor Browser - shouldn\u0027t be an issue.\n\nBut 306033: Dialer: Helplines: Use a webview dialog | https://review.lineageos.org/c/LineageOS/android_packages_apps_Dialer/+/306033 might be the better solution anyway.",
+      "parentUuid": "6bf67bd4_9e50dca7",
+      "revId": "71f6c7b2d789bd2d7fa532aba509b83bb82b5b4f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
