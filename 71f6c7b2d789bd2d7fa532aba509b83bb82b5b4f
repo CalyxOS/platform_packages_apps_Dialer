@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bf67bd4_9e50dca7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-05-25T03:17:05Z",
+      "side": 1,
+      "message": "For Chromium, see https://stackoverflow.com/a/45112167\nIf DDG is used as the default browser this is not really an issue?\nUnsure about handling Tor browser as default",
+      "revId": "71f6c7b2d789bd2d7fa532aba509b83bb82b5b4f",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
