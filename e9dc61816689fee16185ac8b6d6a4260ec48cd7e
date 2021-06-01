@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b96c115a_416b624d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2021-06-01T14:41:33Z",
+      "side": 1,
+      "message": "This isn\u0027t related to eleven-spn, might want to skip it or pull the rest of unused resource cleanup commits in other apps",
+      "revId": "e9dc61816689fee16185ac8b6d6a4260ec48cd7e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
