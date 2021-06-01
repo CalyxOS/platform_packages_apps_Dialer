@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58848022_c51e8efc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-06-01T14:18:22Z",
+      "side": 1,
+      "message": "Merged upstream, should test once to make sure it works and ship.\n\nAlso grab:\n\n310863: Dialer: Helplines: Fix a few casing issues | https://review.lineageos.org/c/LineageOS/android_packages_apps_Dialer/+/310863",
+      "revId": "ceb956f0ebe924b42f6e87076c15a3d70a641f21",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
