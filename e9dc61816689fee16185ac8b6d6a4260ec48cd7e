@@ -34,6 +34,24 @@
       "parentUuid": "b96c115a_416b624d",
       "revId": "e9dc61816689fee16185ac8b6d6a4260ec48cd7e",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f045a981_82764aaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2021-06-03T21:50:49Z",
+      "side": 1,
+      "message": "Agree overall. I\u0027m fine with abandoning this patch if we choose so",
+      "parentUuid": "64064724_7d29e99b",
+      "revId": "e9dc61816689fee16185ac8b6d6a4260ec48cd7e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
