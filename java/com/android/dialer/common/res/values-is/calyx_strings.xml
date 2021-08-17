@@ -8,4 +8,7 @@
     <string name="call_account_private">Hljóð og mynd eru dulkóðuð</string>
     <string name="call_account_unknown">Óþekktur notandi</string>
     <string name="call_account_choose_title">Veldu þjónustuaðila fyrir þetta símtal</string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="call_account_whatsapp" translatable="false"></string>
+    <string name="show_accounts_selection_dialog"></string>
 </resources>

@@ -8,4 +8,7 @@
     <string name="call_account_private">Suara dan Video adalah privat</string>
     <string name="call_account_unknown">Tidak diketahui</string>
     <string name="call_account_choose_title">Pilih provider untuk panggilan ini</string>
+    <string name="show_accounts_selection_dialog"></string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="call_account_whatsapp" translatable="false"></string>
 </resources>
