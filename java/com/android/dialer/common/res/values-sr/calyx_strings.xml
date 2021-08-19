@@ -8,4 +8,7 @@
     <string name="call_account_private">Звук и видео су лични</string>
     <string name="call_account_unknown">Непознато</string>
     <string name="call_account_choose_title">Изаберите достављача за овај позив</string>
+    <string name="call_account_whatsapp" translatable="false"></string>
+    <string name="show_accounts_selection_dialog"></string>
+    <string name="call_account_signal" translatable="false"></string>
 </resources>

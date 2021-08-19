@@ -8,4 +8,7 @@
     <string name="call_account_private">Аудио и видео потоки являются приватными</string>
     <string name="call_account_unknown">Неизвестный</string>
     <string name="call_account_choose_title">Выберите аккаунт для этого звонка</string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="call_account_whatsapp" translatable="false"></string>
+    <string name="show_accounts_selection_dialog"></string>
 </resources>
