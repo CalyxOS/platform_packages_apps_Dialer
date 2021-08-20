@@ -9,4 +9,6 @@
     <string name="call_account_not_private">音声がプライベートではありません</string>
     <string name="call_account_private">音声とビデオがプライベートです</string>
     <string name="call_account_unknown">不明</string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="call_account_whatsapp" translatable="false"></string>
 </resources>
