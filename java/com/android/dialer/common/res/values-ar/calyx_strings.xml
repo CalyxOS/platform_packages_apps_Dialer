@@ -8,4 +8,7 @@
     <string name="call_account_not_private">الصوت عام</string>
     <string name="call_account_private">الصوت و الفيديو خاص</string>
     <string name="call_account_unknown">مجهول</string>
+    <string name="call_account_whatsapp" translatable="false"></string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="show_accounts_selection_dialog"></string>
 </resources>

@@ -8,4 +8,7 @@
     <string name="call_account_private">Audio ja video on yksityistä</string>
     <string name="call_account_unknown">Tuntematon</string>
     <string name="call_account_choose_title">Valitse tälle puhelulle palveluntarjoaja</string>
+    <string name="call_account_whatsapp" translatable="false"/>
+    <string name="show_accounts_selection_dialog">Näytä puhelun tarjoajan valintanäkymä</string>
+    <string name="call_account_signal" translatable="false"/>
 </resources>
