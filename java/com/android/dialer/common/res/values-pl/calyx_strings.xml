@@ -10,5 +10,5 @@
     <string name="call_account_private">Audio i wideo połączenia są prywatne</string>
     <string name="call_account_whatsapp" translatable="false"/>
     <string name="call_account_signal" translatable="false"/>
-    <string name="show_accounts_selection_dialog"/>
+    <string name="show_accounts_selection_dialog">Pokaż okno wyboru dostawcy połączeń</string>
 </resources>
