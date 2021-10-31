@@ -8,7 +8,7 @@
     <string name="call_account_private">Audio i videozapisi su privatni</string>
     <string name="call_account_unknown">Nepoznato</string>
     <string name="call_account_choose_title">Odaberi pružatelja usluge za ovaj poziv</string>
-    <string name="call_account_whatsapp" translatable="false"></string>
-    <string name="show_accounts_selection_dialog"></string>
-    <string name="call_account_signal" translatable="false"></string>
+    <string name="call_account_whatsapp" translatable="false"/>
+    <string name="show_accounts_selection_dialog">Prikaži dijaloški okvir za biranje davatelja poziva</string>
+    <string name="call_account_signal" translatable="false"/>
 </resources>
