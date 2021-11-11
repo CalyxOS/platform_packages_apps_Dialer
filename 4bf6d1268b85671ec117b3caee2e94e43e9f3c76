@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "779d7b74_3fcb852f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-11T20:25:19Z",
+      "side": 1,
+      "message": "dropped `www`. Could also add `https://`",
+      "revId": "4bf6d1268b85671ec117b3caee2e94e43e9f3c76",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
