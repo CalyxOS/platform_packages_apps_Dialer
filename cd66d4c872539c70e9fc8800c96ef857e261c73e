@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03b76b09_2f82f2c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2021-11-11T20:11:35Z",
+      "side": 1,
+      "message": "Merged upstream, 317459: Dialer: Use a DayNight launch theme | https://review.lineageos.org/c/LineageOS/android_packages_apps_Dialer/+/317459",
+      "revId": "cd66d4c872539c70e9fc8800c96ef857e261c73e",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
