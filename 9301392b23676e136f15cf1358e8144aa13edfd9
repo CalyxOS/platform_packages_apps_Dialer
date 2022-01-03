@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb186583_eef14c7c",
+        "filename": "java/com/android/dialer/app/calllog/CallLogListItemViewHolder.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-01-03T10:49:24Z",
+      "side": 1,
+      "message": "Looks like an unnecessary import? Might be from an old PS",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 44
+      },
+      "revId": "9301392b23676e136f15cf1358e8144aa13edfd9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "979ac82e_aaca2420",
+        "filename": "java/com/android/dialer/precall/PreCall.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000002
+      },
+      "writtenOn": "2022-01-03T10:49:24Z",
+      "side": 1,
+      "message": "Looks like an unnecessary import? Might be from an old PS",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 44
+      },
+      "revId": "9301392b23676e136f15cf1358e8144aa13edfd9",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
