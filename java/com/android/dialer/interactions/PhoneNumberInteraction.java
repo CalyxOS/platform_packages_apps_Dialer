@@ -189,7 +189,8 @@ public class PhoneNumberInteraction implements OnLoadCompleteListener<Cursor> {
                 context, phoneNumber,
                 new CallIntentBuilder(phoneNumber, callSpecificAppData)
                     .setIsVideoCall(isVideoCall)
-                    .setAllowAssistedDial(callSpecificAppData.getAllowAssistedDialing()), lookupKey);
+                    .setAllowAssistedDial(callSpecificAppData.getAllowAssistedDialing()),
+                        lookupKey);
         return;
     }
     DialerUtils.startActivityWithErrorToast(context, intent);

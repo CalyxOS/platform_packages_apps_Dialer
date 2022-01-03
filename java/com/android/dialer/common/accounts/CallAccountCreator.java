@@ -180,7 +180,8 @@ class CallAccountCreator {
    * Returns null, if the given account does not support the URI scheme.
    */
   @Nullable
-  private Intent transformIntent(PhoneAccount account, Intent phoneIntent, @Nullable String number) {
+  private Intent transformIntent(PhoneAccount account, Intent phoneIntent,
+      @Nullable String number) {
     Uri uri = phoneIntent.getData();
     if (uri != null && SCHEME_SIP.equals(uri.getScheme())
         && !account.supportsUriScheme(uri.getScheme()) && number != null && !number.isEmpty()) {

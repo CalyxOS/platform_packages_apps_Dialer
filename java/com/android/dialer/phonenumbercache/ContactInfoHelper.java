@@ -410,7 +410,8 @@ public class ContactInfoHelper {
         ? contactInfo.number : contactInfo.normalizedNumber;
     ContentResolver cr = context.getContentResolver();
     String[] args = new String[]{contactInfo.lookupKey, MIME_TYPE_SIGNAL, MIME_TYPE_WHATSAPP};
-    try (Cursor c = cr.query(Data.CONTENT_URI, ACCOUNTS_PROJECTION, ACCOUNTS_SELECTION, args, null)) {
+    try (Cursor c = cr.query(Data.CONTENT_URI, ACCOUNTS_PROJECTION, ACCOUNTS_SELECTION, args,
+        null)) {
       if (c == null) return;
       CallAccountIds ids = CallAccountIds.fromCursor(c, number);
       contactInfo.signalId = ids.signalId;
