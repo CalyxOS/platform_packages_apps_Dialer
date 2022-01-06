@@ -8,7 +8,4 @@
     <string name="call_account_private">ఆడియో మరియు వీడియో వ్యక్తిగతం</string>
     <string name="call_account_unknown">అపరిచిత</string>
     <string name="call_account_choose_title">ఈ కాల్ కొరకు ప్రొవైడర్ ను ఎంచుకోండి</string>
-    <string name="call_account_whatsapp" translatable="false"></string>
-    <string name="show_accounts_selection_dialog"></string>
-    <string name="call_account_signal" translatable="false"></string>
 </resources>

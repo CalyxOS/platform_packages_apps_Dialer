@@ -9,6 +9,4 @@
     <string name="call_account_unknown">Tidak diketahui</string>
     <string name="call_account_choose_title">Pilih provider untuk panggilan ini</string>
     <string name="show_accounts_selection_dialog">Tampilkan dialog pemilihan penyedia panggilan</string>
-    <string name="call_account_signal" translatable="false"/>
-    <string name="call_account_whatsapp" translatable="false"/>
 </resources>

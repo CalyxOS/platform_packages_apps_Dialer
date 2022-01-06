@@ -8,7 +8,4 @@
     <string name="call_account_private">Zvuk a video jsou soukromé</string>
     <string name="call_account_unknown">Neznámý</string>
     <string name="call_account_choose_title">Vyberte poskytovatele hovoru</string>
-    <string name="call_account_whatsapp" translatable="false"></string>
-    <string name="call_account_signal" translatable="false"></string>
-    <string name="show_accounts_selection_dialog"></string>
 </resources>
