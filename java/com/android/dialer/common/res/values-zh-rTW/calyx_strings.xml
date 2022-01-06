@@ -8,4 +8,7 @@
     <string name="call_account_not_private">音訊不是隱私的</string>
     <string name="call_account_private">音訊和視像是隱私的</string>
     <string name="call_account_choose_title">選擇此通話的電信業者</string>
+    <string name="call_account_signal" translatable="false"></string>
+    <string name="show_accounts_selection_dialog"></string>
+    <string name="call_account_whatsapp" translatable="false"></string>
 </resources>
