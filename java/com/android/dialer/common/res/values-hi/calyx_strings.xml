@@ -2,13 +2,4 @@
 <resources>
     <string name="call_account_not_private">ऑडियो निजी नहीं है</string>
     <string name="call_account_private">ऑडियो और वीडियो निजी हैं</string>
-    <string name="call_account_unknown"></string>
-    <string name="call_account_whatsapp" translatable="false"></string>
-    <string name="call_account_offline"></string>
-    <string name="call_account_signal" translatable="false"></string>
-    <string name="show_accounts_selection_dialog"></string>
-    <string name="call_account_choose_title"></string>
-    <string name="call_account_unavailable"></string>
-    <string name="call_account_not_installed"></string>
-    <string name="incall_screen_privacy_data_collection"></string>
 </resources>
