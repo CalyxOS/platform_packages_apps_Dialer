@@ -4,7 +4,7 @@
     <string name="call_account_not_installed">Není nainstalováno – Klikněte pro instalaci</string>
     <string name="call_account_offline">Žádné připojení k internetu</string>
     <string name="call_account_unavailable">Nedostupné pro toto číslo</string>
-    <string name="call_account_not_private">Zvuk není soukromé</string>
+    <string name="call_account_not_private">Zvuk není soukromý</string>
     <string name="call_account_private">Zvuk a video jsou soukromé</string>
     <string name="call_account_unknown">Neznámý</string>
     <string name="call_account_choose_title">Vyberte poskytovatele hovoru</string>
