@@ -20,12 +20,15 @@ import static android.graphics.Paint.UNDERLINE_TEXT_FLAG;
 
 import android.app.ActionBar;
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.telephony.SubscriptionManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -56,6 +59,8 @@ import java.util.List;
 import java.util.Map;
 
 public class HelplineActivity extends AppCompatActivity {
+
+    private static final String TAG = "HelplineActivity";
 
     public static final String SHARED_PREFERENCES_KEY = "com.android.dialer.prefs";
 
@@ -234,46 +239,56 @@ public class HelplineActivity extends AppCompatActivity {
 
                 LayoutInflater inflater = HelplineActivity.this.getLayoutInflater();
                 contentView.setOnClickListener(v -> {
-                    AlertDialog.Builder dialogBuilder =
-                            new AlertDialog.Builder(HelplineActivity.this);
-                    View webviewDlgView = inflater.inflate(R.layout.dialog_webview, null);
-                    dialogBuilder.setView(webviewDlgView);
-                    LinearLayout loadingLayout = webviewDlgView.findViewById(R.id.webview_loading);
+                    try {
+                        // Try to launch the helpline link in Tor browser if installed
+                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(content));
+                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
+                            Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS | Intent.FLAG_ACTIVITY_NO_HISTORY);
+                         intent.setPackage("org.torproject.torbrowser");
+                         startActivity(intent);
+                    } catch (ActivityNotFoundException exception) {
+                        Log.d(TAG, "Unable to find Tor browser!");
+                        AlertDialog.Builder dialogBuilder =
+                                new AlertDialog.Builder(HelplineActivity.this);
+                        View webviewDlgView = inflater.inflate(R.layout.dialog_webview, null);
+                        dialogBuilder.setView(webviewDlgView);
+                        LinearLayout loadingLayout = webviewDlgView.findViewById(R.id.webview_loading);
 
-                    // Disable cookies
-                    CookieManager.getInstance().setAcceptCookie(false);
-                    // Setup WebView
-                    WebView webView = webviewDlgView.findViewById(R.id.webview);
-                    webView.setWebViewClient(new WebViewClient() {
-                        @Override
-                        public boolean shouldOverrideUrlLoading(WebView view,
-                                WebResourceRequest request) {
-                          return false;
-                        }
+                        // Disable cookies
+                        CookieManager.getInstance().setAcceptCookie(false);
+                        // Setup WebView
+                        WebView webView = webviewDlgView.findViewById(R.id.webview);
+                        webView.setWebViewClient(new WebViewClient() {
+                            @Override
+                            public boolean shouldOverrideUrlLoading(WebView view,
+                                    WebResourceRequest request) {
+                            return false;
+                            }
 
-                        @Override
-                        public void onPageFinished(WebView view, String url) {
-                            super.onPageFinished(view, url);
-                            loadingLayout.setVisibility(ProgressBar.INVISIBLE);
-                            webView.setVisibility(View.VISIBLE);
-                        }
-                    });
-                    // Override headers to disable cache and add "Do not track"
-                    Map<String, String> headers = new HashMap<>(3);
-                    headers.put("Pragma", "no-cache");
-                    headers.put("Cache-Control", "no-cache");
-                    headers.put("DNT", "1");
-                    // Start loading the URL
-                    webView.loadUrl(content, headers);
-                    // Clear any WebView history
-                    dialogBuilder.setPositiveButton(android.R.string.ok, (dlg, which) -> {
-                        webView.clearHistory();
-                        dlg.dismiss();
-                    });
-                    dialogBuilder.setOnDismissListener(dialog -> webView.clearHistory());
-                    dialogBuilder.show();
-                    // dismiss the dialog, we show a new one already
-                    mDialog.dismiss();
+                            @Override
+                            public void onPageFinished(WebView view, String url) {
+                                super.onPageFinished(view, url);
+                                loadingLayout.setVisibility(ProgressBar.INVISIBLE);
+                                webView.setVisibility(View.VISIBLE);
+                            }
+                        });
+                        // Override headers to disable cache and add "Do not track"
+                        Map<String, String> headers = new HashMap<>(3);
+                        headers.put("Pragma", "no-cache");
+                        headers.put("Cache-Control", "no-cache");
+                        headers.put("DNT", "1");
+                        // Start loading the URL
+                        webView.loadUrl(content, headers);
+                        // Clear any WebView history
+                        dialogBuilder.setPositiveButton(android.R.string.ok, (dlg, which) -> {
+                            webView.clearHistory();
+                            dlg.dismiss();
+                        });
+                        dialogBuilder.setOnDismissListener(dialog -> webView.clearHistory());
+                        dialogBuilder.show();
+                        // dismiss the dialog, we show a new one already
+                        mDialog.dismiss();
+                    }
                 });
             }
         }
