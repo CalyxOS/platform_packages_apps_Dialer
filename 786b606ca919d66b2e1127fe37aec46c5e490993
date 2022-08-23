@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ed941df_9ef00556",
+        "filename": "java/com/android/dialer/common/accounts/CallAccountUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-23T21:42:01Z",
+      "side": 1,
+      "message": "We should figure out what this eventually leads to.\n\nWe know about the api.whatsapp.com redirect, but what after that?",
+      "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
