@@ -19,6 +19,10 @@ package com.android.dialer.searchfragment.list;
 
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
+import static com.android.dialer.common.accounts.CallAccountUtils.isE164Number;
+import static com.android.dialer.common.accounts.CallAccountUtils.isSignalInstalled;
+import static com.android.dialer.common.accounts.CallAccountUtils.isWhatsAppInstalled;
+
 import android.database.Cursor;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
@@ -468,6 +472,16 @@ public final class NewSearchFragment extends Fragment
     actions.add(Action.SEND_SMS);
     if (CallUtil.isVideoEnabled(getContext())) {
       actions.add(Action.MAKE_VILTE_CALL);
+    }
+
+    // using rawNumber instead of query is important as query is missing stuff like +
+    if (isDialableNumber && !isRegularSearch() && isE164Number(getContext(), rawNumber) &&
+            isSignalInstalled(getContext())) {
+      actions.add(Action.SIGNAL);
+    }
+    if (isDialableNumber && !isRegularSearch() && isE164Number(getContext(), rawNumber) &&
+            isWhatsAppInstalled(getContext())) {
+      actions.add(Action.WHATSAPP);
     }
 
     return actions;
