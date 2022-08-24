@@ -16,6 +16,24 @@
       "message": "We should figure out what this eventually leads to.\n\nWe know about the api.whatsapp.com redirect, but what after that?",
       "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc513d70_5e33da06",
+        "filename": "java/com/android/dialer/common/accounts/CallAccountUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-08-24T11:55:55Z",
+      "side": 1,
+      "message": "Does it matter though? When WhatsApp is installed, this link (because verified) should only ever open in WhatsApp and not in a regular browser resolving redirects, right?\n\nThere seems to be a whatsapp://send Uri as well. If you prefer I can see if this is usable as well.",
+      "parentUuid": "3ed941df_9ef00556",
+      "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
