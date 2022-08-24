@@ -34,6 +34,24 @@
       "parentUuid": "3ed941df_9ef00556",
       "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9716f85_08e6ccda",
+        "filename": "java/com/android/dialer/common/accounts/CallAccountUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-24T15:39:22Z",
+      "side": 1,
+      "message": "Link detection is broken on AOSP 12.\n\nLatest CalyxOS builds include a fix from master, so it would be fine, but if whatsapp:// works I\u0027d pick that.",
+      "parentUuid": "dc513d70_5e33da06",
+      "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
