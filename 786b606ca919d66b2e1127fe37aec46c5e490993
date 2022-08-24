@@ -52,6 +52,24 @@
       "parentUuid": "dc513d70_5e33da06",
       "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89660bda_79728224",
+        "filename": "java/com/android/dialer/common/accounts/CallAccountUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-08-24T16:45:55Z",
+      "side": 1,
+      "message": "whatsapp://send?phone\u003d   seems to work as well",
+      "parentUuid": "a9716f85_08e6ccda",
+      "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
