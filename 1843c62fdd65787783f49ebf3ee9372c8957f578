@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "263ae4db_78dc29de",
+        "filename": "java/com/android/dialer/common/res/values/calyx_strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2022-08-25T16:18:39Z",
+      "side": 1,
+      "message": "`Open in %s`\nand combine with call_account_signal/call_account_whatsapp ?",
+      "range": {
+        "startLine": 28,
+        "startChar": 45,
+        "endLine": 28,
+        "endChar": 59
+      },
+      "revId": "1843c62fdd65787783f49ebf3ee9372c8957f578",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
