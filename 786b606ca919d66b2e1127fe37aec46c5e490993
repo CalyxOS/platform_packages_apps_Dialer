@@ -70,6 +70,24 @@
       "parentUuid": "a9716f85_08e6ccda",
       "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b6372b5_a4e6bfab",
+        "filename": "java/com/android/dialer/common/accounts/CallAccountUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-08-25T23:22:29Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "89660bda_79728224",
+      "revId": "786b606ca919d66b2e1127fe37aec46c5e490993",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
