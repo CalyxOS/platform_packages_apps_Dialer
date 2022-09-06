@@ -136,6 +136,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
 	org.lineageos.lib.phone
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
+        android-support-v14-preference \
+        android-support-fragment \
 	android-support-core-ui \
 	$(ANDROID_SUPPORT_DESIGN_TARGETS) \
 	android-support-transition \
@@ -166,10 +168,12 @@ LOCAL_ANNOTATION_PROCESSOR_CLASSES := \
   com.google.auto.value.processor.AutoValueProcessor,dagger.internal.codegen.ComponentProcessor,com.bumptech.glide.annotation.compiler.GlideAnnotationProcessor,com.android.dialer.rootcomponentgenerator.RootComponentProcessor
 
 # Proguard includes
-LOCAL_PROGUARD_FLAG_FILES := proguard.flags $(call all-named-files-under,proguard.*flags,$(BASE_DIR))
-LOCAL_PROGUARD_ENABLED := custom
+#LOCAL_PROGUARD_FLAG_FILES := proguard.flags $(call all-named-files-under,proguard.*flags,$(BASE_DIR))
+#LOCAL_PROGUARD_ENABLED := custom
 
-LOCAL_PROGUARD_ENABLED += optimization
+#LOCAL_PROGUARD_ENABLED += optimization
+LOCAL_DEX_PREOPT := false
+LOCAL_PROGUARD_ENABLED := disabled
 
 LOCAL_SDK_VERSION := system_current
 LOCAL_MODULE_TAGS := optional
