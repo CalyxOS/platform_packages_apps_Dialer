@@ -753,4 +753,9 @@
             android:exported="false" />
     </application>
 
+    <queries>
+        <package android:name="org.thoughtcrime.securesms"/>
+        <package android:name="com.whatsapp"/>
+    </queries>
+
 </manifest>
