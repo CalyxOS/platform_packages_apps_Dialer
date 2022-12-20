@@ -34,6 +34,23 @@
       "parentUuid": "32f723a2_ea322e7b",
       "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5a6785a_9df2f73d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-12-20T22:04:16Z",
+      "side": 1,
+      "message": "I\u0027ll see about coming up with a patch for Tor Browser for Android and then update here with more info (finally got it to start building)",
+      "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": []
