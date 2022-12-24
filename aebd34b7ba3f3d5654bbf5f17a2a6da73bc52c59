@@ -51,6 +51,24 @@
       "message": "I\u0027ll see about coming up with a patch for Tor Browser for Android and then update here with more info (finally got it to start building)",
       "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2904e6de_38535ee9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-12-24T00:06:39Z",
+      "side": 1,
+      "message": "This patch to Tor Browser\u0027s Fenix component is working for me: https://gitlab.torproject.org/tpo/applications/fenix/-/merge_requests/163\n\nIt causes the Connect page to come up when opening a link. After connecting, the link will open normally. (Tested with links in F-Droid and Tor Browser as the default browser.)\n\nAs far as I know the Tor team is mostly out for the holidays, but hopefully they will get a chance to review after that.",
+      "parentUuid": "e5a6785a_9df2f73d",
+      "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": []
