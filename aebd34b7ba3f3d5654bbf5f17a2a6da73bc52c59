@@ -69,6 +69,24 @@
       "parentUuid": "e5a6785a_9df2f73d",
       "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7dbf560d_656ef287",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-12-24T15:18:41Z",
+      "side": 1,
+      "message": "Nice. We\u0027ll ship this when there\u0027s a new release of Tor Browser with this commit, which we can include in our F-Droid repo (prebuilts/calyx/fdroid)\n\nWe can also consider setting it as default browser for safest at that point.",
+      "parentUuid": "2904e6de_38535ee9",
+      "revId": "aebd34b7ba3f3d5654bbf5f17a2a6da73bc52c59",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ],
   "submitRequirementResults": []
