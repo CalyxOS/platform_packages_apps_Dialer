@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "707603a6_1ba41aaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-06-29T21:30:11Z",
+      "side": 1,
+      "message": "{\n  \"prebuilts/calyx/fdroid/repo/TorBrowser.apk\": [\n    \"org.torproject.torbrowser\",\n    \"2015960779\",\n    \"102.2.1-Release (12.5)\"\n  ]\n}",
+      "revId": "681cb1768e9e51944efdcb275964ca8ae1a83e50",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
