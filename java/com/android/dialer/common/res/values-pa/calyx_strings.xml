@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="call_account_private">ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ ਪ੍ਰਾਈਵੇਟ ਹਨ</string>
+    <string name="call_account_not_private">ਆਡੀਓ ਪ੍ਰਾਈਵੇਟ ਨਹੀਂ ਹੈ</string>
+    <string name="call_account_unavailable">ਇਸ ਨੰਬਰ ਲਈ ਅਣਉਪਲਬਧ</string>
+    <string name="call_account_offline">ਕੋਈ ਇੰਟਰਨੈਟ ਕਨੈਕਸ਼ਨ ਨਹੀਂ</string>
+    <string name="call_account_choose_title">ਇਸ ਕਾਲ ਲਈ ਪ੍ਰੋਵਾਈਡਰ ਚੁਣੋ</string>
+    <string name="call_account_unknown">ਅਗਿਆਤ</string>
+    <string name="call_account_not_installed">ਇੰਸਟਾਲ ਨਹੀਂ ਹੈ - ਇੰਸਟਾਲ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="show_accounts_selection_dialog">ਕਾਲ ਪ੍ਰੋਵਾਈਡਰ ਚੋਣ ਡਾਇਲਾਗ ਵਿਖਾਓ</string>
+    <string name="incall_screen_privacy_data_collection">ਇਸ ਕਾਲ ਦੀ ਲੋਕੇਸ਼ਨ ਅਤੇ ਆਡੀਓ ਪ੍ਰਾਈਵੇਟ ਨਹੀਂ ਹਨ।</string>
+    <string name="dialer_search_action">%s ਵਿੱਚ ਖੋਲ੍ਹੋ</string>
+</resources>
