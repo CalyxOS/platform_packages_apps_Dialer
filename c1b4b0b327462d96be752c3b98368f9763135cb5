@@ -16,6 +16,24 @@
       "message": "We\u0027ll have to bump again :/\n\nSurprised we didn\u0027t do it earlier. I guess it has been fine.",
       "revId": "c1b4b0b327462d96be752c3b98368f9763135cb5",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28dc9bda_fbd25ebf",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-10T22:54:48Z",
+      "side": 1,
+      "message": "Actually, it\u0027s fine.\n\nAOSP?: 2900000\nUs, out of band fix, 12L May 2022: 2900001\nCalyxOS 3.8.0 and newer: 2900002\n\nSo everyone got 2900002 via OTA, and since then the app has kept getting updated at the same version. No need to touch it now.",
+      "parentUuid": "88d32b31_81c0c74e",
+      "revId": "c1b4b0b327462d96be752c3b98368f9763135cb5",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
