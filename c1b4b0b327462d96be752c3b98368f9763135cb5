@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88d32b31_81c0c74e",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-10-10T19:27:34Z",
+      "side": 1,
+      "message": "We\u0027ll have to bump again :/\n\nSurprised we didn\u0027t do it earlier. I guess it has been fine.",
+      "revId": "c1b4b0b327462d96be752c3b98368f9763135cb5",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
