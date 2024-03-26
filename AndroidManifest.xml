@@ -305,12 +305,6 @@
             </intent-filter>
         </receiver>
 
-        <provider
-            android:name="com.android.dialer.lookup.LookupProvider"
-            android:authorities="com.android.dialer.lookup"
-            android:exported="false"
-            android:multiprocess="false" />
-
         <!-- TODO(a bug): remove activity themes and only have application wide themes -->
         <!-- The entrance point for Phone UI.
              stateAlwaysHidden is set to suppress keyboard show up on dialpad screen. -->

@@ -42,7 +42,6 @@ import androidx.preference.PreferenceManager;
 import com.android.dialer.R;
 import com.android.dialer.common.LogUtil;
 import com.android.dialer.compat.telephony.TelephonyManagerCompat;
-import com.android.dialer.lookup.LookupSettingsFragment;
 import com.android.dialer.util.PermissionsUtil;
 import com.android.dialer.voicemail.settings.VoicemailSettingsFragment;
 import com.android.voicemail.VoicemailClient;
@@ -143,12 +142,6 @@ public class DialerSettingsActivity extends AppCompatActivity implements
       quickResponseSettings.setIntent(quickResponseSettingsIntent);
       quickResponseSettings.setIconSpaceReserved(false);
       getPreferenceScreen().addPreference(quickResponseSettings);
-
-      final Preference lookupSettings = new Preference(getContext());
-      lookupSettings.setTitle(R.string.lookup_settings_label);
-      lookupSettings.setFragment(LookupSettingsFragment.class.getName());
-      lookupSettings.setIconSpaceReserved(false);
-      getPreferenceScreen().addPreference(lookupSettings);
 
       TelephonyManager telephonyManager = getContext().getSystemService(TelephonyManager.class);
       TelecomManager telecomManager = (TelecomManager) getContext().getSystemService(
