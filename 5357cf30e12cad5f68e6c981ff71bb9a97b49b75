@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edaf77ed_c1774ca9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2024-04-05T14:05:50Z",
+      "side": 1,
+      "message": "Tested with Signal. Shows \"Open in Signal\" as an option when the number has been fully typed, before Dial has been pressed.",
+      "revId": "5357cf30e12cad5f68e6c981ff71bb9a97b49b75",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
