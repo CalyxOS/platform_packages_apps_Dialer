@@ -9,4 +9,5 @@
     <string name="call_account_unknown">Inconnu</string>
     <string name="call_account_choose_title">Choisissez un fournisseur pour cet appel</string>
     <string name="show_accounts_selection_dialog">Afficher la boîte de dialogue de sélection du fournisseur d\'appel</string>
+    <string name="dialer_search_action">Ouvrir dans %s</string>
 </resources>

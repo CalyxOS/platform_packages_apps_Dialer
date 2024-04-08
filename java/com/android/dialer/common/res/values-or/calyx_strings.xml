@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="call_account_unknown">ଅଜଣା</string>
-    <string name="call_account_offline">ଇଣ୍ଟରନେଟ୍ ବନ୍ଦ୍ ଅଛେ</string>
-    <string name="call_account_private">ଅଡିଓ ଆରୁ ଭିଡିଓ ବ୍ୟକ୍ତିଗତ ଆଏ</string>
-    <string name="call_account_not_private">ଅଡିଓ ବ୍ୟକ୍ତିଗତ୍ ନାଇସେ</string>
-    <string name="call_account_not_installed">ଇନ୍ଷ୍ଟଲ୍ ନିଁହେଇ - ଇନ୍ଷ୍ଟଲ୍ କର୍ବାର୍ ଲାଗି ଟଚ୍ କର</string>
-    <string name="call_account_unavailable">ଇ ନମ୍ୱର୍ ଲାଗି ଉପଲବ୍ଧ ନାଇନ</string>
-    <string name="call_account_choose_title">ଇ କଲ୍ ଗୁଟେ ପ୍ରଦାନକାରୀ ବାଛୁନ୍</string>
-    <string name="dialer_search_action">%s ରେ ଖୁଲ</string>
-    <string name="incall_screen_privacy_data_collection">ଇ କଲ୍ ର ଲୋକେସନ୍ ଆରୁ ଅଡିଓ ବ୍ୟକ୍ତିଗତ୍ ନାଇସେ ।</string>
+    <string name="show_accounts_selection_dialog">କଲ୍ ପ୍ରଦାନକାରୀ ଚୟନ ର ସଂଳାପ ଦେଖନ୍ତୁ</string>
+    <string name="call_account_unavailable">ଏହି ନମ୍ବର ପାଇଁ ଉପଲବ୍ଧ ନାହିଁ</string>
+    <string name="dialer_search_action">%s ରେ ଖୁଳନ୍ତୁ</string>
+    <string name="call_account_choose_title">ଏହି କଲ୍ ପାଇଁ ଏକ ପ୍ରୋଭାଇଡର ଚୟନ କରନ୍ତୁ</string>
+    <string name="call_account_private">ଅଡିଓ ଏବଂ ଭିଡିଓ ବ୍ୟକ୍ତିଗତ ଅଟନ୍ତି</string>
+    <string name="call_account_not_private">ଅଡିଓ ବ୍ୟକ୍ତିଗତ ନୁହେଁ</string>
+    <string name="call_account_offline">ଇଣ୍ଟରନେଟ୍ ସଂଯୋଗ ନାହିଁ</string>
+    <string name="call_account_not_installed">ଇନଷ୍ଟଲ୍ ହୋଇନାହିଁ। ଇନଷ୍ଟଲ୍ କରିବା ପାଇଁ ଟ୍ୟାପ୍ କରନ୍ତୁ</string>
+    <string name="incall_screen_privacy_data_collection">ଏହି କଲ୍ ର ଅବସ୍ଥାନ ଏବଂ ଅଡିଓ ବ୍ୟକ୍ତିଗତ ନୁହେଁ।</string>
 </resources>
