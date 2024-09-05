@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,20 +18,21 @@
 package com.android.dialer.speeddial;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.VisibleForTesting;
-import android.support.v7.widget.PopupMenu;
-import android.support.v7.widget.PopupMenu.OnMenuItemClickListener;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.widget.PopupMenu;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
 import com.android.dialer.speeddial.database.SpeedDialEntry.Channel;
 import com.android.dialer.speeddial.loader.SpeedDialUiItem;
 
 /** {@link PopupMenu} which presents contact options for starred contacts. */
-public class ContextMenu extends PopupMenu implements OnMenuItemClickListener {
+public class ContextMenu extends PopupMenu implements PopupMenu.OnMenuItemClickListener {
 
   private final ContextMenuItemListener listener;
 
@@ -100,9 +102,9 @@ public class ContextMenu extends PopupMenu implements OnMenuItemClickListener {
   @Override
   public boolean onMenuItemClick(MenuItem menuItem) {
     if (menuItem.getItemId() == R.id.voice_call_container) {
-      listener.placeCall(Assert.isNotNull(voiceChannel));
+      listener.placeCall(Assert.isNotNull(voiceChannel), speedDialUiItem.lookupKey());
     } else if (menuItem.getItemId() == R.id.video_call_container) {
-      listener.placeCall(Assert.isNotNull(videoChannel));
+      listener.placeCall(Assert.isNotNull(videoChannel), speedDialUiItem.lookupKey());
     } else if (menuItem.getItemId() == R.id.send_message_container) {
       listener.openSmsConversation(voiceChannel.number());
     } else if (menuItem.getItemId() == R.id.remove_container) {
@@ -115,17 +117,11 @@ public class ContextMenu extends PopupMenu implements OnMenuItemClickListener {
     return true;
   }
 
-  @VisibleForTesting(otherwise = VisibleForTesting.NONE)
-  public boolean isVisible() {
-    return visible;
-  }
-
   /** Listener to report user clicks on menu items. */
-  @VisibleForTesting(otherwise = VisibleForTesting.PACKAGE_PRIVATE)
   public interface ContextMenuItemListener {
 
     /** Called when the user selects "voice call" or "video call" option from the context menu. */
-    void placeCall(Channel channel);
+    void placeCall(Channel channel, String lookupKey);
 
     /** Called when the user selects "send message" from the context menu. */
     void openSmsConversation(String number);

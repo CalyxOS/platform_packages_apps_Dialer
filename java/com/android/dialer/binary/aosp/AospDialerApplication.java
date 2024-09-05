@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +17,22 @@
 
 package com.android.dialer.binary.aosp;
 
-import android.support.annotation.NonNull;
+import android.content.Context;
+import android.net.Uri;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import com.android.contacts.common.extensions.PhoneDirectoryExtender;
+import com.android.contacts.common.extensions.PhoneDirectoryExtenderFactory;
 import com.android.dialer.binary.common.DialerApplication;
 import com.android.dialer.inject.ContextModule;
+import com.android.dialer.phonenumbercache.PhoneNumberCacheBindings;
+import com.android.dialer.phonenumbercache.PhoneNumberCacheBindingsFactory;
+import com.android.incallui.bindings.InCallUiBindings;
+import com.android.incallui.bindings.InCallUiBindingsFactory;
+import com.android.incallui.bindings.InCallUiBindingsStub;
+import com.android.incallui.bindings.PhoneNumberService;
 
 /**
  * The application class for the AOSP Dialer. This is a version of the Dialer app that has no

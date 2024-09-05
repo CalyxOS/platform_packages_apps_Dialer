@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +17,6 @@
 
 package com.android.dialer.searchfragment.common;
 
-import com.android.dialer.dialercontact.DialerContact;
-
 /** Interface of possible actions that can be performed by search elements. */
 public interface RowClickListener {
 
@@ -26,7 +25,7 @@ public interface RowClickListener {
    *
    * @param ranking position in the list relative to the other elements
    */
-  void placeVoiceCall(String phoneNumber, int ranking);
+  void placeVoiceCall(String phoneNumber, String lookupKey, int ranking);
 
   /**
    * Places an IMS video call.
@@ -34,10 +33,4 @@ public interface RowClickListener {
    * @param ranking position in the list relative to the other elements
    */
   void placeVideoCall(String phoneNumber, int ranking);
-
-  /** Places a Duo video call. */
-  void placeDuoCall(String phoneNumber);
-
-  /** Opens the enriched calling/call composer interface. */
-  void openCallAndShare(DialerContact dialerContact);
 }
