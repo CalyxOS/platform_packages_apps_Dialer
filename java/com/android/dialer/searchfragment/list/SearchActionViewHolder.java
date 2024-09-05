@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,22 +17,30 @@
 
 package com.android.dialer.searchfragment.list;
 
+import static com.android.dialer.common.accounts.CallAccountUtils.getAppIcon;
+import static com.android.dialer.common.accounts.CallAccountUtils.getMsgMeIntent;
+import static com.android.dialer.common.accounts.SpecialCallingAccounts.MIME_TYPE_SIGNAL;
+import static com.android.dialer.common.accounts.SpecialCallingAccounts.MIME_TYPE_WHATSAPP;
+
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.IntDef;
-import android.support.annotation.StringRes;
-import android.support.annotation.VisibleForTesting;
-import android.support.v7.widget.RecyclerView;
+import android.content.res.ColorStateList;
+import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.StringRes;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.dialer.R;
 import com.android.dialer.common.Assert;
-import com.android.dialer.logging.DialerImpression;
-import com.android.dialer.logging.Logger;
 import com.android.dialer.searchfragment.common.RowClickListener;
 import com.android.dialer.util.DialerUtils;
 import com.android.dialer.util.IntentUtil;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
@@ -62,12 +71,17 @@ final class SearchActionViewHolder extends RecyclerView.ViewHolder implements On
     int MAKE_VILTE_CALL = 4;
     /** Places a voice call to the number. */
     int MAKE_VOICE_CALL = 5;
+    /** Opens a wa.me link */
+    int WHATSAPP = Integer.MAX_VALUE - 1;
+    /** Opens a signal.me link */
+    int SIGNAL = Integer.MAX_VALUE;
   }
 
   private final Context context;
   private final ImageView actionImage;
   private final TextView actionText;
   private final RowClickListener listener;
+  private final ColorStateList actionImageTint;
 
   private @Action int action;
   private int position;
@@ -80,12 +94,15 @@ final class SearchActionViewHolder extends RecyclerView.ViewHolder implements On
     actionText = view.findViewById(R.id.search_action_text);
     this.listener = listener;
     view.setOnClickListener(this);
+    actionImageTint = actionImage.getImageTintList();
   }
 
   void setAction(@Action int action, int position, String query) {
     this.action = action;
     this.position = position;
     this.query = query;
+    // set default tint to prevent view recycling issues when clearing tint for custom actions
+    actionImage.setImageTintList(actionImageTint);
     switch (action) {
       case Action.ADD_TO_CONTACT:
         actionText.setText(R.string.search_shortcut_add_to_contact);
@@ -107,30 +124,38 @@ final class SearchActionViewHolder extends RecyclerView.ViewHolder implements On
         actionText.setText(context.getString(R.string.search_shortcut_make_voice_call, query));
         actionImage.setImageResource(R.drawable.quantum_ic_phone_vd_theme_24);
         break;
+      case Action.WHATSAPP:
+        actionText.setText(context.getString(R.string.dialer_search_action,
+            context.getString(R.string.call_account_whatsapp)));
+        Intent iw = getMsgMeIntent(context, query, MIME_TYPE_WHATSAPP);
+        Drawable drawableW = getAppIcon(context.getPackageManager(), iw);
+        actionImage.setImageTintList(null);
+        actionImage.setImageDrawable(drawableW);
+        break;
+      case Action.SIGNAL:
+        actionText.setText(context.getString(R.string.dialer_search_action,
+            context.getString(R.string.call_account_signal)));
+        Intent is = getMsgMeIntent(context, query, MIME_TYPE_SIGNAL);
+        Drawable drawableS = getAppIcon(context.getPackageManager(), is);
+        actionImage.setImageTintList(null);
+        actionImage.setImageDrawable(drawableS);
+        break;
       case Action.INVALID:
       default:
         throw Assert.createIllegalStateFailException("Invalid action: " + action);
     }
   }
 
-  @VisibleForTesting
-  @Action
-  int getAction() {
-    return action;
-  }
-
   @Override
   public void onClick(View v) {
     switch (action) {
       case Action.ADD_TO_CONTACT:
-        Logger.get(context).logImpression(DialerImpression.Type.ADD_TO_A_CONTACT_FROM_DIALPAD);
         Intent intent = IntentUtil.getAddToExistingContactIntent(query);
         @StringRes int errorString = R.string.add_contact_not_available;
         DialerUtils.startActivityWithErrorToast(context, intent, errorString);
         break;
 
       case Action.CREATE_NEW_CONTACT:
-        Logger.get(context).logImpression(DialerImpression.Type.CREATE_NEW_CONTACT_FROM_DIALPAD);
         intent = IntentUtil.getNewContactIntent(query);
         DialerUtils.startActivityWithErrorToast(context, intent);
         break;
@@ -145,7 +170,17 @@ final class SearchActionViewHolder extends RecyclerView.ViewHolder implements On
         break;
 
       case Action.MAKE_VOICE_CALL:
-        listener.placeVoiceCall(query, position);
+        listener.placeVoiceCall(query, null, position);
+        break;
+
+      case Action.SIGNAL:
+        intent = getMsgMeIntent(context, query, MIME_TYPE_SIGNAL);
+        DialerUtils.startActivityWithErrorToast(context, intent);
+        break;
+
+      case Action.WHATSAPP:
+        intent = getMsgMeIntent(context, query, MIME_TYPE_WHATSAPP);
+        DialerUtils.startActivityWithErrorToast(context, intent);
         break;
 
       case Action.INVALID:

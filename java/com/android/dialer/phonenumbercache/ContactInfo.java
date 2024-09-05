@@ -17,8 +17,10 @@
 package com.android.dialer.phonenumbercache;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+
 import com.android.contacts.common.ContactsUtils.UserType;
 import com.android.dialer.logging.ContactSource;
 import com.android.dialer.util.UriUtils;
@@ -68,6 +70,9 @@ public class ContactInfo {
 
   /** @see android.provider.ContactsContract.CommonDataKinds.Phone#CARRIER_PRESENCE */
   public int carrierPresence;
+
+  public long signalId = -1;
+  public long whatsAppId = -1;
 
   @Override
   public int hashCode() {

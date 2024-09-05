@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +21,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.contacts.common.util.Constants;
 import com.android.dialer.contactphoto.ContactPhotoManager;
 import com.android.dialer.lettertile.LetterTileDrawable;
@@ -44,6 +47,7 @@ public final class NearbyPlaceViewHolder extends RecyclerView.ViewHolder
   private final RowClickListener listener;
 
   private String number;
+  private String lookupKey;
   private int position;
 
   public NearbyPlaceViewHolder(View view, RowClickListener listener) {
@@ -62,6 +66,7 @@ public final class NearbyPlaceViewHolder extends RecyclerView.ViewHolder
    */
   public void bind(SearchCursor cursor, String query) {
     number = cursor.getString(Projections.PHONE_NUMBER);
+    lookupKey = cursor.getString(Projections.LOOKUP_KEY);
     position = cursor.getPosition();
     String name = cursor.getString(Projections.DISPLAY_NAME);
     String address = cursor.getString(Projections.PHONE_LABEL);
@@ -95,6 +100,6 @@ public final class NearbyPlaceViewHolder extends RecyclerView.ViewHolder
 
   @Override
   public void onClick(View v) {
-    listener.placeVoiceCall(number, position);
+    listener.placeVoiceCall(number, lookupKey, position);
   }
 }

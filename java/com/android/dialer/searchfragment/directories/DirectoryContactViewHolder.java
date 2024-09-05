@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
+ * Copyright (C) 2023 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +24,14 @@ import android.net.Uri;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Contacts;
-import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.QuickContactBadge;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.dialer.common.cp2.DirectoryUtils;
 import com.android.dialer.contactphoto.ContactPhotoManager;
 import com.android.dialer.lettertile.LetterTileDrawable;
@@ -50,6 +53,7 @@ public final class DirectoryContactViewHolder extends RecyclerView.ViewHolder
   private final RowClickListener listener;
 
   private String number;
+  private String lookupKey;
   private int position;
 
   public DirectoryContactViewHolder(View view, RowClickListener listener) {
@@ -69,6 +73,7 @@ public final class DirectoryContactViewHolder extends RecyclerView.ViewHolder
    */
   public void bind(SearchCursor cursor, String query) {
     number = cursor.getString(Projections.PHONE_NUMBER);
+    lookupKey = cursor.getString(Projections.LOOKUP_KEY);
     position = cursor.getPosition();
     String name = cursor.getString(Projections.DISPLAY_NAME);
     String label = getLabel(context.getResources(), cursor);
@@ -140,6 +145,6 @@ public final class DirectoryContactViewHolder extends RecyclerView.ViewHolder
 
   @Override
   public void onClick(View v) {
-    listener.placeVoiceCall(number, position);
+    listener.placeVoiceCall(number, lookupKey, position);
   }
 }
