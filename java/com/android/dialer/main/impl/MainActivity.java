@@ -30,6 +30,7 @@ import com.android.dialer.main.MainActivityPeer;
 
 import com.android.dialer.R;
 import com.android.dialer.telecom.TelecomUtil;
+import com.android.dialer.util.DialerUtils;
 import com.android.dialer.util.TransactionSafeActivity;
 
 /** This is the main activity for dialer. It hosts favorites, call log, search, dialpad, etc... */
