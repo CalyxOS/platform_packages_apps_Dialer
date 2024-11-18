@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="call_account_choose_title">இந்த அழைப்பிற்கு வழங்குநரைத் தேர்வு செய்யவும்</string>
+</resources>
