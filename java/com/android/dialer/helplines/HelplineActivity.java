@@ -94,6 +94,7 @@ public class HelplineActivity extends AppCompatActivity {
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(mAdapter);
+        DialerUtils.disableEdgeToEdge(mRecyclerView);
 
         showUi();
     }

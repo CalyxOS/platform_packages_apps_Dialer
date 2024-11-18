@@ -88,6 +88,8 @@ public class DialerSettingsActivity extends AppCompatActivity implements
         fragment = new PrefsFragment();
       }
 
+      DialerUtils.disableEdgeToEdge(requireViewById(R.id.content_frame));
+
       getSupportFragmentManager().beginTransaction()
               .replace(R.id.content_frame, fragment)
               .commit();

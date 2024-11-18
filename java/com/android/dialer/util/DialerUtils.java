@@ -222,4 +222,12 @@ public class DialerUtils {
         return WindowInsetsCompat.CONSUMED;
     });
   }
+
+  public static void disableEdgeToEdge(View contentFrameView) {
+      ViewCompat.setOnApplyWindowInsetsListener(contentFrameView, (v, windowInsets) -> {
+        Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars());
+        v.setPadding(insets.left, insets.top, insets.right, insets.bottom);
+        return WindowInsetsCompat.CONSUMED;
+      });
+  }
 }
