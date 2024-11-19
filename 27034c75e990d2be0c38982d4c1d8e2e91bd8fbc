@@ -16,6 +16,23 @@
       "message": "This seems to work... Does it look okay?",
       "revId": "27034c75e990d2be0c38982d4c1d8e2e91bd8fbc",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c54bc88_701cf30e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000065
+      },
+      "writtenOn": "2024-11-19T03:30:36Z",
+      "side": 1,
+      "message": "I believe Michael picked another change on LineageOS side. Maybe try and prefer that to see if that fixes the issue too?",
+      "revId": "27034c75e990d2be0c38982d4c1d8e2e91bd8fbc",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
