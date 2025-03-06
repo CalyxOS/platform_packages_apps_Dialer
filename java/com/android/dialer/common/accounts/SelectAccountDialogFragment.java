@@ -34,7 +34,7 @@ import android.net.NetworkCapabilities;
 import android.os.Bundle;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.Data;
-import com.android.dialer.contacts.resources.R;
+import com.android.dialer.R;
 import com.android.dialer.util.DialerUtils;
 
 import javax.annotation.Nullable;

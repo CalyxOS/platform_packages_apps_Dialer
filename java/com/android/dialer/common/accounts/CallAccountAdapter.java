@@ -24,7 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.android.dialer.common.accounts.CallAccount.Status;
-import com.android.dialer.contacts.resources.R;
+import com.android.dialer.R;
 
 import java.util.List;
 

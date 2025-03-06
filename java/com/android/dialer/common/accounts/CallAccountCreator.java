@@ -29,7 +29,7 @@ import android.telecom.TelecomManager;
 import android.telephony.TelephonyManager;
 import com.android.contacts.common.compat.PhoneAccountCompat;
 import com.android.dialer.common.accounts.CallAccount.Status;
-import com.android.dialer.contacts.resources.R;
+import com.android.dialer.R;
 import com.android.dialer.util.CallUtil;
 
 import javax.annotation.Nullable;
