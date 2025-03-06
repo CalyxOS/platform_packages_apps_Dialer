@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01bffe2f_0dd87b88",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-03-06T19:52:19Z",
+      "side": 1,
+      "message": "37239: Dialer: Fix resource imports | https://review.calyxos.org/c/CalyxOS/platform_packages_apps_Dialer/+/37239",
+      "revId": "9f9b07000e95b40dc183562882b8b4a617fab01a",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
