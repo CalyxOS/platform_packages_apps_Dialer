@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="call_account_choose_title">Vali selle kõne jaoks teenusepakkuja</string>
+    <string name="call_account_unavailable">Selle numbri jaoks pole saadaval</string>
+    <string name="call_account_offline">Internetiühendus puudub</string>
+    <string name="call_account_not_installed">Pole paigaldatud – puuduta paigaldamiseks</string>
+    <string name="call_account_not_private">Heli ei ole privaatne</string>
+    <string name="incall_screen_privacy_data_collection">Selle kõne asukoht ja heli ei ole privaatsed.</string>
+    <string name="show_accounts_selection_dialog">Kuva kõne teenusepakkuja valikuaken</string>
+    <string name="dialer_search_action">Ava kasutades%s</string>
+    <string name="call_account_private">Heli ja video on privaatsed</string>
+    <string name="call_account_unknown">Tundmatu</string>
+</resources>
