@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11f0fbb5_30196435",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2026-03-23T17:45:52Z",
+      "side": 1,
+      "message": "If I go to Dialer -\u003e Helplines -\u003e Question mark icon -\u003e More\n\nit tells me to contact www.lineageos.org and an ok button, but doesn\u0027t open any website in any browser. tor browser is installed and connected.",
+      "revId": "2a1b381debd26f86e01e011618abdef3c696f0a4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
