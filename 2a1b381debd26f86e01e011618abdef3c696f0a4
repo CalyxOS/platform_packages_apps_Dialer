@@ -16,6 +16,23 @@
       "message": "If I go to Dialer -\u003e Helplines -\u003e Question mark icon -\u003e More\n\nit tells me to contact www.lineageos.org and an ok button, but doesn\u0027t open any website in any browser. tor browser is installed and connected.",
       "revId": "2a1b381debd26f86e01e011618abdef3c696f0a4",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95805a26_6a2e6730",
+        "filename": "java/com/android/dialer/helplines/HelplineActivity.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-03-23T19:40:40Z",
+      "side": 1,
+      "message": "@t@grobox.de do you hit this?",
+      "revId": "2a1b381debd26f86e01e011618abdef3c696f0a4",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
